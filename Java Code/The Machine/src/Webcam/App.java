@@ -15,7 +15,6 @@ public class App {
 
 	private JFrame frame;
 	private JLabel imageLabel;
-	FPSCounter fps = new FPSCounter();
 
 	public static void main(String[] args) {
 		App app = new App();
@@ -39,7 +38,6 @@ public class App {
 		VideoCapture capture = new VideoCapture(0);
 		capture.set(Videoio.CAP_PROP_FRAME_WIDTH, 1020);
 		capture.set(Videoio.CAP_PROP_FRAME_HEIGHT, 720);
-		fps.interrupt();
 		
 		if (capture.isOpened()) {
 			while (true) {
