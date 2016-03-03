@@ -4,9 +4,9 @@
 
 For those of you who do not know anything about The Machine, which seems very unlikely since you're at a Person of Interest java program, The Machine is an AI who was created to monitor the people of the US after 9/11, it is used to predict terrorist attacks from webcam monitors, security cameras, phone microphones, email, computers, and anything digital. 
 
-This idea was originally done by some redditors on <a href="http://reddit.com/r/themachineproject">the machine subreddit</a> and their <a href="https://github.com/poi-the-machine/the-machine">GitHub</a> repository. However, over time, development dwindled (as of February 1, 2016) and the group couldn't spend time on it anymore due to them all getting busy with real life events. I had asked them and got the Okay to try and restart the project once again. 
+This idea was originally done by some redditors on <a href="http://reddit.com/r/themachineproject">the machine subreddit</a> and their <a href="https://github.com/poi-the-machine/the-machine">GitHub</a> repository. The group for an amount of time stopped working on it so I decided to follow in their footsteps. These projects have no affiliation between them, they are separate projects both based off of a great TV show.
 
-This time however, The Machine can now run on Operating Systems besides Windows (Once I find the OpenCV files for the other OSes, I have to personally build the ones that are not Windows and havent gotten around to it yet.) and maybe it will eventually work on Android.
+The Machine soon will run on kperating systems besides Windows and maybe it will eventually work on Android.
 
 So far only the access to the webcam has been coded but facial recognition is in the works.
 
