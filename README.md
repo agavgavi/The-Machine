@@ -6,10 +6,8 @@ For those of you who do not know anything about The Machine, which seems very un
 
 This idea was originally done by some redditors on <a href="http://reddit.com/r/themachineproject">the machine subreddit</a> and their <a href="https://github.com/poi-the-machine/the-machine">GitHub</a> repository. The group for an amount of time stopped working on it so I decided to follow in their footsteps. These projects have no affiliation between them, they are separate projects both based off of a great TV show.
 
-The Machine soon will run on kperating systems besides Windows and maybe it will eventually work on Android.
-
-So far only the access to the webcam has been coded but facial recognition is in the works.
-
-There is no download link yet since it is only a webcam app but once other features are added it will be published.
+The Machine soon will run on operating systems besides Windows and maybe it will eventually work on Android. Facial Detection has been created and future plans are in the works. There is no download link yet since I have not found a web host yet for the files but as soon as I do, the link will be accessible from this page.
 
 TL;DR The Machine lives
+
+P.S. When the Jar file is closed, a process is left running, so far I have not found how to stop this from happening and it is something I will be working towards in the future to fix. The process is Java(TM) SE Binary and can be closed in task manager in the section, Background Processes.
