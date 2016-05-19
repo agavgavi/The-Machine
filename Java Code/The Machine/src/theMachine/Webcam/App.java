@@ -13,7 +13,6 @@ import org.opencv.objdetect.CascadeClassifier;
 import org.opencv.videoio.*;
 public class App {
 	static {
-		
 		LoadLibrary.loadOpenCV();
 	}
 	
