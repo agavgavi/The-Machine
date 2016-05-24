@@ -12,17 +12,25 @@ public class LoadLibrary {
 
 		{
 			if (bitness.endsWith("64")) {
-				lib = new File("resources/theMachine/opencv/windows/x64/opencv_java310.dll");
+				lib = new File(Assets.Windowsx64);
 			} else {
-				lib = new File("resources/theMachine/opencv/windows/x86/opencv_java310.dll");
+				lib = new File(Assets.Windowsx86);
 			}
 		} else if (os.toUpperCase().contains("LINUX"))
 
 		{
 			if (bitness.endsWith("64")) {
-				lib = new File("resources/theMachine/opencv/linux/opencv_java300.so");
+				lib = new File(Assets.Linux);
 			} else {
-				lib = new File("resources/theMachine/opencv/linux/opencv_java300.so");
+				lib = new File(Assets.Linux);
+			}
+		}else if (os.toUpperCase().contains("OS X"))
+
+		{
+			if (bitness.endsWith("64")) {
+				lib = new File(Assets.Mac);
+			} else {
+				lib = new File(Assets.Mac);
 			}
 		}
 
