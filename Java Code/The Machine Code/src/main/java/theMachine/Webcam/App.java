@@ -1,4 +1,4 @@
-package theMachine.Webcam;
+package main.java.theMachine.Webcam;
 
 import java.awt.Image;
 
@@ -6,8 +6,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.WindowConstants;
-
-import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfRect;
 import org.opencv.core.Point;
@@ -19,29 +17,26 @@ import org.opencv.objdetect.CascadeClassifier;
 import org.opencv.videoio.VideoCapture;
 import org.opencv.videoio.Videoio;
 
-import javafx.application.Platform;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
-public class App {
+public class App extends Assets{
 	static {
-		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+		LoadLibrary.loadOpenCV();
 	}
-	
 
 	private JFrame frame;
 	private JLabel imageLabel;
 	private CascadeClassifier faceDetector;
-	ImageIcon icon = new ImageIcon(Assets.AdminImage);
+	ImageIcon icon = new ImageIcon(AdminImage);
 
 	public static void main(String[] args) {
-	
+
 		App app = new App();
 		app.initGUI();
-		
+
 		app.loadCascade();
 		app.runMainLoop(args);
-		 	 
+
 	}
+
 	private void initGUI() {
 		frame = new JFrame("Locate Admin");
 		frame.setSize(400, 400);
@@ -54,7 +49,7 @@ public class App {
 
 	private void loadCascade() {
 
-		faceDetector = new CascadeClassifier(Assets.Cascade);
+		faceDetector = new CascadeClassifier(Cascade);
 
 	}
 
@@ -75,17 +70,19 @@ public class App {
 					ImageIcon imageIcon = new ImageIcon(tempImage, "Captured video");
 					imageLabel.setIcon(imageIcon);
 					frame.pack(); // this will resize the window to fit the
-					
+
 				} else {
+					
 					System.out.println(" -- Frame not captured -- Break!");
 					break;
 				}
-				
+
 			}
 		} else {
 			System.out.println("Couldn't open capture.");
 		}
 	}
+
 	private void detectAndDrawFace(Mat image) {
 		MatOfRect faceDetections = new MatOfRect();
 		faceDetector.detectMultiScale(image, faceDetections, 1.1, 7, 0, new Size(250, 40), new Size());

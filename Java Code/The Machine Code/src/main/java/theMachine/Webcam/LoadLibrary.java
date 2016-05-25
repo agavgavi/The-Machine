@@ -1,4 +1,4 @@
-package theMachine.Webcam;
+package main.java.theMachine.Webcam;
 
 import java.io.File;
 
@@ -35,5 +35,6 @@ public class LoadLibrary {
 		}
 
 		System.load(lib.getAbsolutePath());
+		System.out.println(os);
 	}
 }

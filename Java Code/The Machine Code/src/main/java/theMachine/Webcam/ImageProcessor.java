@@ -1,4 +1,4 @@
-package theMachine.Webcam;
+package main.java.theMachine.Webcam;
 
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferByte;
