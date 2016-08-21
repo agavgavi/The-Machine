@@ -12,7 +12,8 @@ import javafx.scene.image.Image;
 
 public class Assets {
 
-// Folders
+	// Folders
+	public static final String Src = "src";
 	public static final String Resources = "resources";
 	public static final String Images = Resources + File.separator + "images";
 	public static final String Fonts = Resources + File.separator + "fonts";
@@ -20,8 +21,9 @@ public class Assets {
 	public static final String Cascade = Resources + File.separator + "cascades" + File.separator
 			+ "haarcascade_frontalface_alt2.xml";
 	public static final String USERDATA = Resources + File.separator + "USERDATA";
+	public static final String UserDataStrings = USERDATA + File.separator + "USERDESCRIPTION.txt";
 
-// Image Locations
+	// Image Locations
 	public static final String AdminImage = Images + File.separator + "Admin.png";
 	public static final String SecondaryImage = Images + File.separator + "Secondary.png";
 	public static final String AnalogImage = Images + File.separator + "Analog Interface.png";
@@ -31,34 +33,34 @@ public class Assets {
 		admin, secondary, analog, threat
 	}
 
-// OpenCV Stuff
+	// OpenCV Stuff
 	public static final String Windows = OpenCV + File.separator + "windows";
 	public static final String Linux = OpenCV + File.separator + "linux/opencv_java310.so";
 	public static final String Mac = OpenCV + File.separator + "mac/libopencv_java300.dylib";
 	public static final String Windowsx64 = Windows + File.separator + "x64/opencv_java310.dll";
 	public static final String Windowsx86 = Windows + File.separator + "x86/opencv_java310.dll";
 
-// Images
+	// Images
 	public static final Image Admin = loadImage(ImageTypes.admin);
 	public static final Image Secondary = loadImage(ImageTypes.secondary);
 	public static final Image Analog = loadImage(ImageTypes.analog);
 	public static final Image Threat = loadImage(ImageTypes.threat);
 
 	// Fonts
-	public static final String FUTURA_LOWERCASE = Fonts + File.separator + "Futura Lowercase.ttf";
+	public static final String FUTURA_LOWERCASE = Fonts + File.separator + "Futura-Lowercase.ttf";
 	public static final Font FuturaLowercaseSmall = createFonts("FUTURA_LOWERCASE_12");
 	public static final Font FuturaLowercaseMedium = createFonts("FUTURA_LOWERCASE_24");
 	public static final Font FuturaLowercaseLarge = createFonts("FUTURA_LOWERCASE_48");
 	public static final Font FuturaLowercaseTiny = createFonts("FUTURA_LOWERCASE_8");
 
-	public static final String FUTURA_UPPERCASE = Fonts + File.separator + "Futura Uppercase.ttf";
+	public static final String FUTURA_UPPERCASE = Fonts + File.separator + "Futura-Uppercase.ttf";
 	public static final Font FuturaUppercaseSmall = createFonts("FUTURA_UPPERCASE_12");
 	public static final Font FuturaUppercaseMedium = createFonts("FUTURA_UPPERCASE_24");
 	public static final Font FuturaUppercaseLarge = createFonts("FUTURA_UPPERCASE_48");
 	public static final Font FuturaUppercaseTiny = createFonts("FUTURA_UPPERCASE_8");
 	public static final File fu = new File(FUTURA_UPPERCASE);
 
-	public static final String FUTURA_ITALICIZED = Fonts + File.separator + "Futura Italicized.ttf";
+	public static final String FUTURA_ITALICIZED = Fonts + File.separator + "Futura-Italicized.ttf";
 	public static final Font FuturaItalicizedSmall = createFonts("FUTURA_ITALICIZED_12");
 	public static final Font FuturaItalicizedMedium = createFonts("FUTURA_ITALICIZED_24");
 	public static final Font FuturaItalicizedLarge = createFonts("FUTURA_ITALICIZED_48");
@@ -87,7 +89,7 @@ public class Assets {
 	public static Font createFonts(String fontname) {
 		try {
 
-// LOWERCASE
+			// LOWERCASE
 			if (fontname == "FUTURA_LOWERCASE_12") {
 				return Font.createFont(Font.TRUETYPE_FONT, new File(FUTURA_LOWERCASE)).deriveFont(12f);
 			} else if (fontname == "FUTURA_LOWERCASE_24") {
@@ -98,7 +100,7 @@ public class Assets {
 				return Font.createFont(Font.TRUETYPE_FONT, new File(FUTURA_LOWERCASE)).deriveFont(8f);
 			}
 
-// UPPERCASE
+			// UPPERCASE
 			else if (fontname == "FUTURA_UPPERCASE_12") {
 				return Font.createFont(Font.TRUETYPE_FONT, new File(FUTURA_UPPERCASE)).deriveFont(12f);
 			} else if (fontname == "FUTURA_UPPERCASE_24") {
@@ -109,7 +111,7 @@ public class Assets {
 				return Font.createFont(Font.TRUETYPE_FONT, new File(FUTURA_UPPERCASE)).deriveFont(8f);
 			}
 
-// ITALICIZED
+			// ITALICIZED
 			else if (fontname == "FUTURA_ITALICIZED_12") {
 				return Font.createFont(Font.TRUETYPE_FONT, new File(FUTURA_ITALICIZED)).deriveFont(12f);
 			} else if (fontname == "FUTURA_ITALICIZED_24") {

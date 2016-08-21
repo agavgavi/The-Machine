@@ -1,0 +1,49 @@
+
+.root {
+	-fx-background-color: #181818;
+}
+
+
+.label {
+	-fx-text-fill: #ebe618
+}
+
+.button {
+	-fx-background-color: #585858;
+	-fx-text-fill: #EEE93C;
+	-fx-background-radius: 0;
+}
+
+.dialog{
+	-fx-background-color: #181818;
+}
+
+.dialog-pane:header .header-panel {
+	-fx-background-color: #181818;
+	-fx-background-radius: 0;
+}
+
+.text-field {
+	-fx-background-color: #585858;
+	-fx-text-fill: #EEE93C;
+	-fx-background-radius: 0;
+}
+
+.text-area {
+	-fx-background-color: #585858;
+	-fx-text-fill: #EEE93C;
+	-fx-background-radius: 0;
+}
+
+.text-area .scroll-pane .viewport {
+	-fx-background-color: #585858;
+}
+
+.text-area .scroll-pane .content {
+	-fx-background-color: #585858;
+}
+
+.dialog-pane:header .header-panel .label {
+	-fx-background-radius: 0;
+}
+
