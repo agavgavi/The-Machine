@@ -6,7 +6,7 @@ For those of you who do not know anything about The Machine, which seems very un
 
 This idea was originally done by some redditors on <a href="http://reddit.com/r/themachineproject">the machine subreddit</a> and their <a href="https://github.com/poi-the-machine/the-machine">GitHub</a> repository. The group for an amount of time stopped working on it so I decided to follow in their footsteps. These projects have no affiliation between them, they are separate projects both based off of a great TV show.
 
-The Machine soon will run on operating systems besides Windows and maybe it will eventually work on Android. Facial Detection has been created and future plans are in the works. There is no download link yet since I have not found a web host yet for the files but as soon as I do, the link will be accessible from this page.
+The Machine soon will run on computer operating systems, so far only Windows has been tested, and maybe it will eventually work on Android. Facial Detection has been created and future plans are in the works. There is no download link yet since I have not found a web host yet for the files but as soon as I do, the link will be accessible from this page.
 
 TL;DR The Machine lives
 
